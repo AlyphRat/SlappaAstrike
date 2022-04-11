@@ -1,0 +1,196 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/polygon_static_body.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/polygon_rigid_body.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/pin.png" type="Texture" id=4]
+[ext_resource path="res://assets/background.tscn" type="PackedScene" id=5]
+
+[node name="test_scene" type="Node2D"]
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 388 )
+
+[node name="polygon_rigid_body2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 16, 265 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body2" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body2/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 87, 241 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body3" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body3/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1286, 610 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body4" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body4/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1430, 616 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body5" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body5/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2143, 637 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body6" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body6/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2751, 373 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body7" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body7/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3809, 733 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body8" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body8/Polygon2D" index="0"]
+position = Vector2( 763, 265 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 4264, 733 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body9" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body9/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 4678, 739 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body10" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body10/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 4981, 754 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body11" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body11/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_rigid_body12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 4502, 724 )
+sleeping = true
+can_sleep = false
+
+[node name="Polygon2D" parent="polygon_rigid_body12" index="1"]
+color = Color( 0.807843, 0.654902, 0.282353, 0 )
+polygon = PoolVector2Array( 780, 324, 749, 326, 744, 287, 747, 207, 755, 207, 778, 210 )
+
+[node name="Pin" type="Sprite" parent="polygon_rigid_body12/Polygon2D" index="0"]
+position = Vector2( 763, 269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="polygon_static_body" parent="." instance=ExtResource( 1 )]
+position = Vector2( 22, 559 )
+polygon = PoolVector2Array( -15.0001, 51, 81, 24, 252, -23, 316, 79, 469, 64, 546.011, 58.4632, 571.733, 56.614, 622, 53, 747, 57, 838, 47, 906, 38, 1018, 2, 1063, -26, 1123, -68, 1193, -104, 1275, -94, 1632, 375, 2908, 413, 3127, 425, 3517, 149, 3194, 519, 2985, 630, 3022, 953, 4152, 915, 4420, 515, 5855, 528, 6896, 826, 5883, 1067, -223, 991, -192, 234 )
+
+[node name="Background" parent="." instance=ExtResource( 5 )]
+layer = -1
+
+[editable path="polygon_rigid_body2"]
+[editable path="polygon_rigid_body3"]
+[editable path="polygon_rigid_body4"]
+[editable path="polygon_rigid_body5"]
+[editable path="polygon_rigid_body6"]
+[editable path="polygon_rigid_body7"]
+[editable path="polygon_rigid_body8"]
+[editable path="polygon_rigid_body9"]
+[editable path="polygon_rigid_body10"]
+[editable path="polygon_rigid_body11"]
+[editable path="polygon_rigid_body12"]
